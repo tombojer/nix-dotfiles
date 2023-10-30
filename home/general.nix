@@ -2,6 +2,7 @@
 
   imports = [
     ./features/shell
+    ./features/packages
   ];
 
   # This value determines the Home Manager release that your configuration is
