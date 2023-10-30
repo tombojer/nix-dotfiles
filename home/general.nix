@@ -1,8 +1,15 @@
-{ pkgs, ... }: {
+{ pkgs
+, sops-nix  
+, ...
+}: {
 
   imports = [
+    sops-nix.homeManagerModule
     ./features/shell
     ./features/packages
+    ./features/git
+    ./features/nvim
+    ./features/secrets
   ];
 
   # This value determines the Home Manager release that your configuration is
@@ -15,7 +22,8 @@
   home.stateVersion = "23.05"; # Please read the comment before changing.
 
   targets.genericLinux.enable = true;
-
+  nixpkgs.config.allowUnfreePredicate = _: true;
+  
   home.packages = [
     pkgs.pokemonsay
   ];
