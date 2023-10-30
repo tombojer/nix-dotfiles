@@ -11,5 +11,5 @@
   home.packages = [
     pkgs.hello
     pkgs.pokemonsay
-  ];  
+  ];
 }
