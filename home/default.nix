@@ -21,7 +21,6 @@
   # release notes.
   home.stateVersion = "23.05"; # Please read the comment before changing.
 
-  targets.genericLinux.enable = true;
   nixpkgs.config.allowUnfreePredicate = _: true;
 
   home.packages = [

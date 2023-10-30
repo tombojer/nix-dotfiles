@@ -6,7 +6,5 @@
   ];
 
   home.username = "kevin";
-  home.homeDirectory = "/home/kevin";
-
-  targets.genericLinux.enable = true;
+  home.homeDirectory = "/Users/kevin";
 }
