@@ -1,5 +1,5 @@
 { pkgs
-, sops-nix  
+, sops-nix
 , ...
 }: {
 
@@ -23,7 +23,7 @@
 
   targets.genericLinux.enable = true;
   nixpkgs.config.allowUnfreePredicate = _: true;
-  
+
   home.packages = [
     pkgs.pokemonsay
   ];

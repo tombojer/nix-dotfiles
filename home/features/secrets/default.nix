@@ -3,7 +3,6 @@
 , pkgs
 , ...
 }: {
-
   sops = {
     age.keyFile = "${
     if pkgs.stdenv.hostPlatform.isDarwin
@@ -12,11 +11,12 @@
     }";
 
     defaultSopsFile = ./secrets.yaml;
-    
+
     secrets.ssh_key = {
       path = "${config.home.homeDirectory}/.ssh/id_rsa";
       format = "yaml";
       mode = "0600";
     };
   };
+
 }

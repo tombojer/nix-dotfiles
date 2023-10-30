@@ -1,7 +1,7 @@
 { pkgs, ... }: {
 
   home.packages = with pkgs; [
-    lazygit
+    delta
   ];
 
   programs.git = {
@@ -23,6 +23,20 @@
 
       gpg = {
         format = "ssh";
+      };
+    };
+  };
+
+  programs.lazygit = {
+    enable = true;
+    settings = {
+      promptToReturnFromSubprocess = false;
+      git = {
+        overrideGpg = true;
+        paging = {
+          colorArg = "always";
+          pager = "delta --dark --paging=never";
+        };
       };
     };
   };
