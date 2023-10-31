@@ -2,6 +2,12 @@
 , remapKeys
 , ...
 }: {
+  imports = [
+    ../shared/yabai.nix
+    ../shared/skhd.nix
+  ];
+
+
   services.nix-daemon.enable = true;
   nixpkgs.config.allowUnfree = true;
 

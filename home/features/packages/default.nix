@@ -6,10 +6,11 @@
 
     nixpkgs-fmt
 
-    sops
-    age
+    #sops
+    #age
 
     _1password
+    jq
   ];
 }
 

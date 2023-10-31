@@ -43,6 +43,7 @@
     {
       defaultPackage.x86_64-linux = home-manager.defaultPackage.x86_64-linux;
       defaultPackage.aarch64-darwin = home-manager.defaultPackage.aarch64-darwin;
+      defaultPackage.x86_64-darwin = home-manager.defaultPackage.x86_64-darwin;
 
       darwinConfigurations = {
         phobos = nix-darwin.lib.darwinSystem {
@@ -60,6 +61,22 @@
             }
           ];
         };
+
+        titan = nix-darwin.lib.darwinSystem {
+          specialArgs = extraArgs // {
+            remapKeys = true;
+          };
+          system = "x86_64-darwin";
+          modules = [
+            ./systems/titan
+            home-manager.darwinModules.default
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.extraSpecialArgs = extraArgs;
+            }
+          ];
+        };
       };
 
       homeConfigurations = {
@@ -67,6 +84,13 @@
         "kevin@phobos" = home-manager.lib.homeManagerConfiguration {
           modules = [ ./home/phobos.nix ];
           pkgs = import nixpkgs { system = "aarch64-darwin"; };
+          extraSpecialArgs = extraArgs;
+        };
+
+        # Test MacOS setup
+        "kevin@titan" = home-manager.lib.homeManagerConfiguration {
+          modules = [ ./home/titan.nix ];
+          pkgs = import nixpkgs { system = "x86_64-darwin"; };
           extraSpecialArgs = extraArgs;
         };
 
