@@ -75,12 +75,12 @@
       };
 
       homeConfigurations = {
-        # MacBook Pro M2 Pro 16"
-        "kevin@phobos" = home-manager.lib.homeManagerConfiguration {
-          modules = [ ./home/phobos.nix ];
-          pkgs = import nixpkgs { system = "aarch64-darwin"; };
-          extraSpecialArgs = extraArgs;
-        };
+        # # MacBook Pro M2 Pro 16"
+        # "kevin@phobos" = home-manager.lib.homeManagerConfiguration {
+        #   modules = [ ./home/phobos.nix ];
+        #   pkgs = import nixpkgs { system = "aarch64-darwin"; };
+        #   extraSpecialArgs = extraArgs;
+        # };
 
         # # Test MacOS setup
         # "kevin@titan" = home-manager.lib.homeManagerConfiguration {

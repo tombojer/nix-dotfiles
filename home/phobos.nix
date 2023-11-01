@@ -1,4 +1,7 @@
-{ config, pkgs, ... }:
+{ config
+, pkgs
+, lib
+, ... }:
 
 {
   imports = [
@@ -6,5 +9,10 @@
   ];
 
   home.username = "kevin";
-  home.homeDirectory = "/Users/kevin";
+  home.homeDirectory = lib.mkForce "/Users/kevin";
+
+  home.packages = with pkgs; [
+    skhd
+    alacritty
+  ];
 }
