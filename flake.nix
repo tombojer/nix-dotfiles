@@ -1,11 +1,6 @@
 {
   description = "Home Manager configuration";
 
-  nixConfig = {
-    extra-trusted-public-keys = "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g=";
-    extra-substituters = "https://cache.garnix.io";
-  };
-
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
@@ -69,7 +64,7 @@
           system = "x86_64-darwin";
           modules = [
             ./systems/titan
-            home-manager.darwinModules.default
+            home-manager.darwinModules.home-manager
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
@@ -87,12 +82,12 @@
           extraSpecialArgs = extraArgs;
         };
 
-        # Test MacOS setup
-        "kevin@titan" = home-manager.lib.homeManagerConfiguration {
-          modules = [ ./home/titan.nix ];
-          pkgs = import nixpkgs { system = "x86_64-darwin"; };
-          extraSpecialArgs = extraArgs;
-        };
+        # # Test MacOS setup
+        # "kevin@titan" = home-manager.lib.homeManagerConfiguration {
+        #  modules = [ ./home/titan.nix ];
+        #  pkgs = import nixpkgs { system = "x86_64-darwin"; };
+        #  extraSpecialArgs = extraArgs;
+        # };
 
         # VM running Arch Linux
         "kevin@archlinux-vm" = home-manager.lib.homeManagerConfiguration {

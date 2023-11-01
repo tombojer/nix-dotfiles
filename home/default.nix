@@ -9,7 +9,7 @@
     ./features/packages
     ./features/git
     ./features/nvim
-    #    ./features/secrets
+    ./features/secrets
   ];
 
   # This value determines the Home Manager release that your configuration is

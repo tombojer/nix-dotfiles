@@ -6,27 +6,23 @@
     enableScriptingAddition = true;
     package = pkgs.yabai;
     config = {
-      # layout
+      debug_output = "on";
       layout = "bsp";
-      auto_balance = "off";
-      split_ratio = "0.50";
-      window_placement = "second_child";
-      # Gaps
-      window_gap = 4;
-      top_padding = 4;
-      bottom_padding = 4;
-      left_padding = 4;
-      right_padding = 4;
-      # shadows and borders
-      window_shadow = "float";
-      # mouse
+
+      top_padding = 10;
+      bottom_padding = 10;
+      left_padding = 10;
+      right_padding = 10;
+      window_gap = 10;
+
       mouse_follows_focus = "off";
-      focus_follows_mouse = "off";
-      mouse_modifier = "cmd";
+      focus_follows_mouse = "autofocus";
+      mouse_modifier = "ctrl";
       mouse_action1 = "move";
       mouse_action2 = "resize";
-      mouse_drop_action = "swap";
     };
+    extraConfig = ''
+    '';
     # extraConfig = ''
     #   # Unload the macOS WindowManager process
     #   launchctl unload -F /System/Library/LaunchAgents/com.apple.WindowManager.plist > /dev/null 2>&1 &
