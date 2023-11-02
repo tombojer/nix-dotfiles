@@ -24,6 +24,7 @@
 
   nix = {
     settings.trusted-users = [ "root" "kevin" ];
+    gc.automatic = true;
   };
 
   environment.systemPackages = with pkgs; [
