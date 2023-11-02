@@ -4,7 +4,6 @@
     fzf
     fd
     bat
-    eza
   ];
 
   programs.direnv = {
@@ -58,8 +57,14 @@
     enableFishIntegration = true;
   };
 
+  programs.eza = {
+    enable = true;
+    enableAliases = true;
+  };
+
   home.shellAliases = {
-    "ls" = "eza -lah";
+    "wgup-staging" = "wg-quick up ~/.config/wireguard/staging.conf";
+    "wgdown-staging" = "wg-quick down ~/.config/wireguard/staging.conf";
   };
 
   home.file = {

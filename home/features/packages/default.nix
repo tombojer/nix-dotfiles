@@ -5,12 +5,17 @@
     cachix
 
     nixpkgs-fmt
-
-    #sops
-    #age
+    sops
 
     _1password
     jq
+    awscli2
+    htop
+    pigz
+    ssm-session-manager-plugin
+    wget
+    wireguard-tools
+    mysql80
   ];
 }
 
