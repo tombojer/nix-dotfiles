@@ -43,7 +43,7 @@
       darwinConfigurations = {
         phobos = nix-darwin.lib.darwinSystem {
           specialArgs = extraArgs // {
-            remapKeys = true;
+            remapKeys = false;
           };
           system = "aarch64-darwin";
           modules = [

@@ -1,5 +1,4 @@
 { pkgs
-, remapKeys
 , home-manager
 , lib
 , config
@@ -40,10 +39,6 @@
   documentation.man.enable = false;
 
   time.timeZone = "Europe/Berlin";
-  system.keyboard.enableKeyMapping = true;
-
-  system.keyboard.swapLeftCommandAndLeftAlt = remapKeys;
-
 
   # Nix config from https://github.com/DeterminateSystems/nix-installer
   nix.settings.build-users-group = "nixbld";

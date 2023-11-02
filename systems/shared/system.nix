@@ -1,4 +1,5 @@
 { pkgs
+, remapKeys
 , ...
 }: {
   system.defaults.dock = {
@@ -16,4 +17,7 @@
     orientation = "bottom";
     mru-spaces = false;
   };
+
+  system.keyboard.enableKeyMapping = true;
+  system.keyboard.swapLeftCommandAndLeftAlt = remapKeys;
 }
