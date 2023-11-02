@@ -49,6 +49,7 @@
     settings = {
       aws.disabled = true;
       gcloud.disabled = true;
+      command_timeout = 1500;
     };
   };
 
@@ -59,5 +60,33 @@
 
   home.shellAliases = {
     "ls" = "eza -lah";
+  };
+
+  home.file = {
+    ".config/alacritty/alacritty.yml".text = ''
+      font:
+        normal:
+          family: JetBrainsMono Nerd Font
+          style: Regular
+
+        bold:
+          family: JetBrainsMono Nerd Font
+          style: Bold
+
+        italic:
+          family: JetBrainsMono Nerd Font
+          style: Italic
+
+        bold_italic:
+          family: JetBrainsMono Nerd Font
+          style: Bold Italic
+
+      key_bindings:
+        - { key: C, mods: Command|Shift, action: "Copy" }
+        - { key: C, mods: Command, chars: "\x03" }
+        - { key: V, mods: Command|Shift, action: "Paste" }
+        - { key: U, mods: Command, chars: "\x15" }
+        - { key: L, mods: Command, chars: "\x0c" }
+    '';
   };
 }
