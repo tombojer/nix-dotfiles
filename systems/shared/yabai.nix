@@ -22,6 +22,23 @@
       mouse_action2 = "resize";
     };
     extraConfig = ''
+      # Rules
+      ignored_apps=(
+        "1Password"
+        "App Store"
+        "Finder"
+        "Home"
+        "Logi Options"
+        "Logitech Options"
+        "System Information"
+        "System Settings"
+        "Zoom"
+        "Microsoft Teams"
+      )
+
+      for app in ''${ignored_apps[@]}; do
+        yabai -m rule --add app=''${app} manage=off
+      done
     '';
     # extraConfig = ''
     #   # Unload the macOS WindowManager process
