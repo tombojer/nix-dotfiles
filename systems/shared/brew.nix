@@ -6,9 +6,11 @@
     enable = true;
 
     taps = [
+      "platformsh/tap"
     ];
 
     brews = [
+      "platformsh-cli"
     ];
   };
 }
