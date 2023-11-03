@@ -39,6 +39,9 @@
       for app in ''${ignored_apps[@]}; do
         yabai -m rule --add app=''${app} manage=off
       done
+
+      yabai -m rule --add app="^PhpStorm" title!="(.*\[(.*)\].*)|(.*\(\:.*\).*)" manage=off
+      yabai -m rule --add app="^GoLand" title!="(.*\[(.*)\].*)|(.*\(\:.*\).*)" manage=off
     '';
     # extraConfig = ''
     #   # Unload the macOS WindowManager process
