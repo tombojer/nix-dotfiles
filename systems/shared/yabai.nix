@@ -32,7 +32,7 @@
         "Logitech Options"
         "System Information"
         "System Settings"
-        "Zoom"
+        "zoom.us"
         "Microsoft Teams"
       )
 
