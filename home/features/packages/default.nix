@@ -16,6 +16,7 @@
     wget
     wireguard-tools
     mysql80
+    kubectl
   ];
 }
 
