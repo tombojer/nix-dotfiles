@@ -10,6 +10,7 @@
     ./features/git
     ./features/nvim
     ./features/secrets
+    ./features/tmux
   ];
 
   # This value determines the Home Manager release that your configuration is
