@@ -17,6 +17,8 @@
     wireguard-tools
     mysql80
     kubectl
+    colima
+    docker-client
   ];
 }
 
