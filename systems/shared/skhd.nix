@@ -24,8 +24,10 @@
       lalt + shift - up : yabai -m window --warp north
       lalt + shift - down : yabai -m window --warp south
 
-      lalt - h : yabai -m window --toggle bsp
-      lalt - v : yabai -m window --toggle split
+      lalt + shift - h : yabai -m window --toggle bsp
+      lalt + shift - v : yabai -m window --toggle split
+      lalt - h : yabai -m config split_type horizontal
+      lalt - v : yabai -m config split_type vertical
 
       lalt - 1 : yabai -m space --focus 1 && skhd -k "alt + cmd + ctrl + shift - 1"
       lalt - 2 : yabai -m space --focus 2 && skhd -k "alt + cmd + ctrl + shift - 2"
@@ -67,31 +69,26 @@
 
 
       # defines a new mode 'resize' with an on_enter command, that captures keypresses
-      :: resize @ : yabai -m config active_window_opacity 1; yabai -m config normal_window_opacity 0.9;
+      :: resize @ : yabai -m config active_window_border_color 0xFFFF00FF
 
       # from 'default' mode, activate mode 'resize'
       # (this is the key combination you want to use to enter resize mode)
-      lalt - r ; resize 
+      resize < lalt - r ; default
+      default < lalt - r ; resize
 
       # from 'resize' mode, activate mode 'default'
       # (this is the keypress required to leave resize mode)
       resize < escape ; default
 
-      # equalize windows
-      resize < ctrl - 0 : yabai -m space --balance
-
-      # increase window size
-      resize < left : yabai -m window --resize left:-25:0
-      resize < down : yabai -m window --resize top:0:25
-      resize < up : yabai -m window --resize top:0:-25
-      resize < right : yabai -m window --resize left:25:0
-
-
-      # decrease window size
-      resize < alt - right : yabai -m window --resize left:25:0
-      resize < alt - up : yabai -m window --resize bottom:0:-25
-      resize < alt - down : yabai -m window --resize top:0:25
-      resize < alt - left : yabai -m window --resize right:-25:0
+      # resize commands
+      resize < left : yabai -m window --resize left:-50:0; \
+                        yabai -m window --resize right:-50:0
+      resize < down : yabai -m window --resize bottom:0:50; \
+                        yabai -m window --resize top:0:50
+      resize < up   : yabai -m window --resize top:0:-50; \
+                        yabai -m window --resize bottom:0:-50
+      resize < right : yabai -m window --resize right:50:0; \
+                        yabai -m window --resize left:50:0
     '';
   };
 }
