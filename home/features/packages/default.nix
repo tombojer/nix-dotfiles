@@ -19,6 +19,7 @@
     kubectl
     colima
     docker-client
+    dive
   ];
 }
 
