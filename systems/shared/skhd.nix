@@ -62,7 +62,10 @@
 
       # curly brackets
       rctrl - 7 : skhd -t "{"
-      rctrl - 8 : skhd -t "}"
+      rctrl - 0 : skhd -t "}"
+      rctrl - 8 : skhd -t "["
+      rctrl - 9 : skhd -t "]"
+
 
       # backslash
       rctrl - 0x1B : skhd -t "\"
