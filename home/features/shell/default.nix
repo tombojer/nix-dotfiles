@@ -50,7 +50,8 @@
 
     functions = {
       c = ''
-        # TODO: add zoxide function
+        set DIR (zoxide query -l | fzf)
+        z $DIR
       '';
     };
   };
@@ -78,6 +79,7 @@
   home.shellAliases = {
     "wgup-staging" = "wg-quick up ~/.config/wireguard/staging.conf";
     "wgdown-staging" = "wg-quick down ~/.config/wireguard/staging.conf";
+    "cat" = "bat -pp";
   };
 
   home.file = {

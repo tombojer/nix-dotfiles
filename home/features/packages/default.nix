@@ -11,6 +11,7 @@
     jq
     awscli2
     htop
+    coreutils
     pigz
     ssm-session-manager-plugin
     wget
@@ -20,6 +21,7 @@
     colima
     docker-client
     dive
+    bun
   ];
 }
 
