@@ -53,6 +53,9 @@
         set DIR (zoxide query -l | fzf)
         z $DIR
       '';
+      t = ''
+        tmux attach -t "$(tmux ls -F '#{session_name}:#{window_name}' | fzf)"
+      '';
     };
   };
 
