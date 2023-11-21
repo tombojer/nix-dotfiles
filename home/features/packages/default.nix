@@ -22,6 +22,8 @@
     docker-client
     dive
     bun
+    k9s
+    gh
   ];
 }
 
