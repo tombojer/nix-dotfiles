@@ -12,5 +12,9 @@
     brews = [
       "platformsh-cli"
     ];
+
+    casks = [
+      "bruno"
+    ];
   };
 }
