@@ -25,6 +25,7 @@
     k9s
     gh
     k6
+    awscli2
   ];
 }
 
