@@ -110,6 +110,12 @@
         - { key: V, mods: Command|Shift, action: "Paste" }
         - { key: U, mods: Command, chars: "\x15" }
         - { key: L, mods: Command, chars: "\x0c" }
+        - { key: Left, mods: Control, chars: "\x1bb" } # Skip word left
+        - { key: Right, mods: Control, chars: "\x1bf" } # Skip word right
+        - { key: Left, mods: Command, chars: "\x1bOH", mode: AppCursor } # Home
+        - { key: Right, mods: Command, chars: "\x1bOF", mode: AppCursor } # End
+        - { key: Back, mods: Command, chars: "\x15" } # Delete line
+        - { key: Back, mods: Control, chars: "\x1b\x7f" } # Delete word
     '';
   };
 }
