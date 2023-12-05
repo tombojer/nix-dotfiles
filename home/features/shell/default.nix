@@ -65,6 +65,7 @@
     settings = {
       aws.disabled = true;
       gcloud.disabled = true;
+      git_status.disabled = true;
       command_timeout = 1500;
     };
   };
