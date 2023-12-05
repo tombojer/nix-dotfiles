@@ -84,14 +84,14 @@
       resize < escape ; default
 
       # resize commands
-      resize < left : yabai -m window --resize left:-50:0; \
-                        yabai -m window --resize right:-50:0
-      resize < down : yabai -m window --resize bottom:0:50; \
-                        yabai -m window --resize top:0:50
-      resize < up   : yabai -m window --resize top:0:-50; \
-                        yabai -m window --resize bottom:0:-50
-      resize < right : yabai -m window --resize right:50:0; \
-                        yabai -m window --resize left:50:0
+      resize < left : yabai -m window --resize left:-100:0; \
+                        yabai -m window --resize right:-100:0
+      resize < down : yabai -m window --resize bottom:0:100; \
+                        yabai -m window --resize top:0:100
+      resize < up   : yabai -m window --resize top:0:-100; \
+                        yabai -m window --resize bottom:0:-100
+      resize < right : yabai -m window --resize right:100:0; \
+                        yabai -m window --resize left:100:0
     '';
   };
 }
