@@ -29,6 +29,7 @@
     gh
     k6
     awscli2
+    eksctl
   ];
 }
 
