@@ -22,6 +22,10 @@
     wireguard-tools
     mysql80
     kubectl
+    kubectx
+    kubernetes-helm
+    kubent
+
     docker-client
     dive
     bun
