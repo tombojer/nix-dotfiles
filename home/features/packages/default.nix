@@ -1,8 +1,8 @@
 { pkgs, flake, ... }: {
 
-  imports = [
-    ./colima.nix
-  ];
+  #imports = [
+  #  ./colima.nix
+  #];
 
   home.packages = with pkgs; [
     flake.inputs.devenv.packages.${system}.devenv
@@ -13,6 +13,7 @@
 
     _1password
     jq
+    gnused
     #awscli2
     htop
     coreutils

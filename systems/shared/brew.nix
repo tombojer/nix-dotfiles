@@ -16,10 +16,12 @@
 
     brews = [
       "platformsh-cli"
+      "docker-credential-helper"
     ];
 
     casks = [
       "bruno"
+      "rancher"
     ];
   };
 }
