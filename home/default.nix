@@ -1,10 +1,11 @@
 { pkgs
-, sops-nix
+, flake
 , ...
 }: {
 
   imports = [
-    sops-nix.homeManagerModule
+    flake.inputs.sops-nix.homeManagerModule
+    flake.inputs.mac-app-util.homeManagerModules.default
     ./features/shell
     ./features/packages
     ./features/git
@@ -23,10 +24,6 @@
   home.stateVersion = "23.05"; # Please read the comment before changing.
 
   nixpkgs.config.allowUnfreePredicate = _: true;
-
-  home.packages = [
-    pkgs.pokemonsay
-  ];
 
   home.sessionVariables = {
     EDITOR = "nvim";

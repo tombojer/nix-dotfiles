@@ -14,7 +14,6 @@
     _1password
     jq
     gnused
-    #awscli2
     htop
     coreutils
     pigz
