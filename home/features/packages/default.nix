@@ -14,6 +14,7 @@
     _1password
     jq
     gnused
+    unixtools.watch
     htop
     coreutils
     pigz
