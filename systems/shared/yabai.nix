@@ -35,6 +35,8 @@
         "System Settings"
         "zoom.us"
         "Microsoft Teams"
+        "SonicWall Mobile Connect"
+        "JetBrains Toolbox"
       )
 
       for app in ''${ignored_apps[@]}; do
