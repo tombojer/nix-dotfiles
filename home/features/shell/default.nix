@@ -87,36 +87,79 @@
   };
 
   home.file = {
-    ".config/alacritty/alacritty.yml".text = ''
-      font:
-        normal:
-          family: JetBrainsMono Nerd Font
-          style: Regular
+    ".config/alacritty/alacritty.toml".text = ''
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
 
-        bold:
-          family: JetBrainsMono Nerd Font
-          style: Bold
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
 
-        italic:
-          family: JetBrainsMono Nerd Font
-          style: Italic
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
 
-        bold_italic:
-          family: JetBrainsMono Nerd Font
-          style: Bold Italic
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
 
-      key_bindings:
-        - { key: C, mods: Command|Shift, action: "Copy" }
-        - { key: C, mods: Command, chars: "\x03" }
-        - { key: V, mods: Command|Shift, action: "Paste" }
-        - { key: U, mods: Command, chars: "\x15" }
-        - { key: L, mods: Command, chars: "\x0c" }
-        - { key: Left, mods: Control, chars: "\x1bb" } # Skip word left
-        - { key: Right, mods: Control, chars: "\x1bf" } # Skip word right
-        - { key: Left, mods: Command, chars: "\x1bOH", mode: AppCursor } # Home
-        - { key: Right, mods: Command, chars: "\x1bOF", mode: AppCursor } # End
-        - { key: Back, mods: Command, chars: "\x15" } # Delete line
-        - { key: Back, mods: Control, chars: "\x1b\x7f" } # Delete word
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0003"
+key = "C"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0015"
+key = "U"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\f"
+key = "L"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001Bb"
+key = "Left"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u001Bf"
+key = "Right"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u001BOH"
+key = "Left"
+mode = "AppCursor"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001BOF"
+key = "Right"
+mode = "AppCursor"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0015"
+key = "Back"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001B\u007F"
+key = "Back"
+mods = "Control"
     '';
   };
 }
