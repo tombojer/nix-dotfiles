@@ -51,6 +51,7 @@
 
       lalt - l : pmset displaysleepnow
 
+      lalt + shift - r : launchctl kickstart -k gui/501/org.nixos.yabai
 
       # defines a new mode 'resize' with an on_enter command, that captures keypresses
       :: resize @ : yabai -m config active_window_border_color 0xFFFF00FF
