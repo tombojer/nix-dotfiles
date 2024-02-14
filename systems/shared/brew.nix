@@ -17,6 +17,8 @@
     brews = [
       "platformsh-cli"
       "docker-credential-helper"
+      "argocd"
+      "dnsmasq"
     ];
 
     casks = [
