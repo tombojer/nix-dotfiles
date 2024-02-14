@@ -56,6 +56,10 @@
       t = ''
         tmux attach -t "$(tmux ls -F '#{session_name}:#{window_name}' | fzf)"
       '';
+      awsx = ''
+        set -gx AWS_PROFILE (aws configure list-profiles | fzf)
+        echo "Using profile: $AWS_PROFILE"
+      '';
     };
   };
 
