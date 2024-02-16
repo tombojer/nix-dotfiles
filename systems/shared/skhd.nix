@@ -46,7 +46,7 @@
       lalt - f : yabai -m window --toggle float
       lalt + shift - q : yabai -m window --close
 
-      lalt - return : alacritty msg create-window || open -na alacritty
+      lalt - return : open -na wezterm
       lalt - b : open -na /Applications/Google\ Chrome.app/
 
       lalt - l : pmset displaysleepnow
