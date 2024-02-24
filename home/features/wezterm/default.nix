@@ -5,7 +5,6 @@
   ];
 
   home.file = {
-    ".config/wezterm/wezterm.lua".source =
-      config.lib.file.mkOutOfStoreSymlink ./wezterm.lua;
+    ".config/wezterm/wezterm.lua".source = ./wezterm.lua;
   };
 }
