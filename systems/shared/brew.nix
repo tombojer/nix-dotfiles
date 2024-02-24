@@ -12,6 +12,7 @@
 
     taps = [
       "platformsh/tap"
+      "aws/tap"
     ];
 
     brews = [
@@ -19,6 +20,9 @@
       "docker-credential-helper"
       "argocd"
       "dnsmasq"
+      "eks-node-viewer"
+      "grpcurl"
+      "exiftool"
     ];
 
     casks = [
