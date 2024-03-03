@@ -47,7 +47,7 @@
       lalt + shift - q : yabai -m window --close
 
       lalt - return : open -na wezterm
-      lalt - b : open -na /Applications/Google\ Chrome.app/
+      lalt - b : open -na "Google Chrome" --args --new-window
 
       lalt - l : pmset displaysleepnow
 
