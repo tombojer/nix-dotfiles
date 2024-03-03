@@ -33,6 +33,10 @@ config.keys = {{
         mods = 'CTRL'
     }
 }, {
+    key = 'C',
+    mods = 'CMD',
+    action = action.CopyTo 'Clipboard'
+}, {
     mods = "OPT",
     key = "LeftArrow",
     action = action.SendKey({
