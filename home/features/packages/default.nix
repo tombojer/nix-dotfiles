@@ -28,6 +28,7 @@
     kubent
 
     docker-client
+    docker-buildx
     dive
     bun
     k9s
