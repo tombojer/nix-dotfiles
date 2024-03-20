@@ -42,6 +42,9 @@
       # Volta
       set -gx VOLTA_HOME $HOME/.volta
       fish_add_path $VOLTA_HOME/bin
+
+      # Krew
+      fish_add_path $HOME/.krew/bin
     '';
 
     plugins = [
@@ -81,7 +84,7 @@
 
   programs.eza = {
     enable = true;
-    enableAliases = true;
+    enableFishIntegration = true;
   };
 
   home.shellAliases = {
