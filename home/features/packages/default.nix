@@ -27,6 +27,8 @@
     kubernetes-helm
     kubent
 
+    act
+
     docker-client
     docker-buildx
     dive
