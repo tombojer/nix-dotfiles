@@ -48,7 +48,7 @@
   documentation.enable = false;
   documentation.man.enable = false;
 
-  time.timeZone = "Europe/Berlin";
+  time.timeZone = "Europe/Dublin";
 
   # Nix config from https://github.com/DeterminateSystems/nix-installer
   nix.settings.build-users-group = "nixbld";
