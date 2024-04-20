@@ -14,6 +14,7 @@
     _1password
     jq
     gnused
+    ripgrep
     unixtools.watch
     htop
     coreutils
