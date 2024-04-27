@@ -12,6 +12,20 @@ config.use_dead_keys = false
 config.adjust_window_size_when_changing_font_size = false
 
 config.keys = {{
+    key = "p",
+    mods = "CMD",
+    action = action.SendKey {
+      key = "p",
+      mods = "CTRL"
+    }
+}, {
+    key = 'n',
+    mods = 'CMD',
+    action = action.SendKey {
+        key = 'n',
+        mods = 'CTRL'
+    }
+}, {
     key = 'u',
     mods = 'CMD',
     action = action.SendKey {
