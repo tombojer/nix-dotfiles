@@ -7,6 +7,9 @@
   programs.git = {
     enable = true;
     package = pkgs.git;
+    lfs = {
+      enable = true;
+    };
 
     userName = "Kevin Rudde";
     userEmail = "k.rudde@shopware.com";
