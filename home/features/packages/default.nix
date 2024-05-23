@@ -28,6 +28,9 @@
     kubernetes-helm
     kubent
 
+    tanka
+    jsonnet-bundler
+
     act
 
     docker-client
