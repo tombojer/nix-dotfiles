@@ -30,6 +30,7 @@
 
     tanka
     jsonnet-bundler
+    jsonnet
 
     act
 
