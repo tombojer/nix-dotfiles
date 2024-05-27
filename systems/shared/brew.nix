@@ -28,6 +28,7 @@
     casks = [
       "bruno"
       "rancher"
+      "orbstack"
     ];
   };
 }
