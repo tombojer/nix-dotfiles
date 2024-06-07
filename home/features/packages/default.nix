@@ -33,6 +33,8 @@
     jsonnet
 
     act
+    azure-cli
+    ory
 
     docker-client
     docker-buildx
