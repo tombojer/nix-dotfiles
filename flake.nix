@@ -66,6 +66,13 @@
           pkgs = import nixpkgs { system = "x86_64-linux"; };
           extraSpecialArgs = extraArgs;
         };
+
+        # WSL2 running Ubuntu
+        "kevin@KevinsPC" = home-manager.lib.homeManagerConfiguration {
+          modules = [ ./home/kevins-pc.nix ];
+          pkgs = import nixpkgs { system = "x86_64-linux"; };
+          extraSpecialArgs = extraArgs;
+        };
       };
     };
 }

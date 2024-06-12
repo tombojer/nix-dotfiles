@@ -5,7 +5,6 @@
 
   imports = [
     flake.inputs.sops-nix.homeManagerModule
-    flake.inputs.mac-app-util.homeManagerModules.default
     ./features/shell
     ./features/packages
     ./features/git
