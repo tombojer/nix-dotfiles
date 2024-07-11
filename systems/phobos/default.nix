@@ -1,5 +1,6 @@
 { pkgs
 , home-manager
+, flake
 , lib
 , config
 , ...
@@ -17,14 +18,12 @@
     shell = "${pkgs.fish}/bin/fish";
   };
 
-  home-manager.users.kevin = { imports = [
-    ../../home/phobos.nix
-  ];};
-
-
-  nix = {
-    settings.trusted-users = [ "root" "kevin" ];
+  home-manager.users.kevin = { 
+    imports = [
+      ../../home/phobos.nix
+    ];
   };
+
 
   nix.gc = {
     automatic = true;
@@ -51,9 +50,20 @@
   time.timeZone = "Europe/Berlin";
 
   # Nix config from https://github.com/DeterminateSystems/nix-installer
-  nix.settings.build-users-group = "nixbld";
-  nix.settings.experimental-features = "nix-command flakes repl-flake";
-  nix.settings.bash-prompt-prefix = "(nix:$name)\040";
-  nix.settings.max-jobs = "auto";
-  nix.settings.extra-nix-path = "nixpkgs=flake:nixpkgs";
+
+  nix = {
+    # package = pkgs.nixVersions.nix_2_23;
+    # extraOptions = ''
+    #   experimental-features = nix-command flakes auto-allocate-uids
+    #   builders-use-substitutes = true
+    #   auto-allocate-uids = true
+    #   builders = @/etc/nix/machines
+    #   log-lines = 100
+    #   nix-path = nixpkgs=${flake.inputs.nixpkgs}
+    #   extra-platforms = x86_64-darwin aarch64-darwin
+    # '';
+    
+    settings.trusted-users = [ "root" "kevin" ];
+  };
+
 }
