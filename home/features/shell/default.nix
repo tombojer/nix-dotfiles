@@ -95,5 +95,6 @@
     "wgdown-staging" = "wg-quick down ~/.config/wireguard/staging.conf";
     "cat" = "bat -pp";
     "tailscale" = "/Applications/Tailscale.app/Contents/MacOS/Tailscale";
+    "k" = "kubectl";
   };
 }
