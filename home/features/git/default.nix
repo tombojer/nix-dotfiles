@@ -21,6 +21,7 @@
       push.autoSetupRemote = true;
       init.defaultBranch = "main";
       pull.rebase = true;
+      rebase.autoStash = true;
       push.default = "simple";
       fetch.prune = true;
 
