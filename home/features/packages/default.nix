@@ -33,6 +33,7 @@
     jsonnet
 
     act
+    renovate
     azure-cli
     ory
 
