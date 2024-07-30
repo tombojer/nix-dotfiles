@@ -37,6 +37,7 @@
     azure-cli
     ory
 
+    istioctl
     docker-client
     docker-buildx
     dive
