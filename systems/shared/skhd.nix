@@ -46,7 +46,7 @@
       lalt - f : yabai -m window --toggle float
       lalt + shift - q : yabai -m window --close
 
-      lalt - return : pgrep "wezterm" > /dev/null && wezterm start || open -a WezTerm
+      lalt - return : open -na WezTerm
       lalt - b : open -na "Google Chrome" --args --new-window
 
       lalt - l : pmset displaysleepnow
