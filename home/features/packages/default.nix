@@ -47,6 +47,7 @@
     k6
     awscli2
     eksctl
+    cilium-cli
   ];
 }
 
