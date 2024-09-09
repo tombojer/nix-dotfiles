@@ -18,6 +18,8 @@
     mru-spaces = false;
   };
 
+  security.pam.enableSudoTouchIdAuth = true;
+
   system.keyboard = {
     enableKeyMapping = true;
     swapLeftCommandAndLeftAlt = remapKeys;
