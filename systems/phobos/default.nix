@@ -13,12 +13,14 @@
     ../shared/fonts.nix
   ];
 
+  system.stateVersion = 5;
+
   users.users.kevin = {
     home = "/Users/kevin";
     shell = "${pkgs.fish}/bin/fish";
   };
 
-  home-manager.users.kevin = { 
+  home-manager.users.kevin = {
     imports = [
       ../../home/phobos.nix
     ];
@@ -62,7 +64,7 @@
     #   nix-path = nixpkgs=${flake.inputs.nixpkgs}
     #   extra-platforms = x86_64-darwin aarch64-darwin
     # '';
-    
+
     settings.trusted-users = [ "root" "kevin" ];
   };
 
