@@ -28,12 +28,7 @@
     kubernetes-helm
     kubent
 
-    tanka
-    jsonnet-bundler
-    jsonnet
-
     act
-    renovate
     azure-cli
     ory
 
