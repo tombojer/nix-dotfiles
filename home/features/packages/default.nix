@@ -29,7 +29,6 @@
     kubent
 
     act
-    azure-cli
     ory
 
     istioctl
