@@ -24,6 +24,8 @@
     kubernetes-helm
     kubent
 
+    terraform
+
     act
     ory
 

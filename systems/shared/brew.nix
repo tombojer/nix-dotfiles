@@ -23,6 +23,7 @@
       "eks-node-viewer"
       "grpcurl"
       "exiftool"
+      "azure-cli"
     ];
 
     casks = [
