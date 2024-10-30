@@ -1,9 +1,5 @@
 { pkgs, flake, ... }: {
 
-  imports = [
-   ./colima.nix
-  ];
-
   home.packages = with pkgs; [
     flake.inputs.devenv.packages.${system}.devenv
     cachix
