@@ -7,7 +7,7 @@
     nixpkgs-fmt
     sops
 
-    _1password
+    _1password-cli
     jq
     gnused
     ripgrep
