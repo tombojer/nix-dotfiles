@@ -1,8 +1,8 @@
 { config
-, pkgs
 , lib
-, flake
+, pkgs
 , ... }:
+, flake
 
 {
   imports = [
@@ -11,8 +11,8 @@
     ./features/darwin
   ];
 
-  home.username = "kevin";
-  home.homeDirectory = lib.mkForce "/Users/kevin";
+  home.username = "t.bojer";
+  home.homeDirectory = lib.mkForce "/Users/t.bojer";
 
   home.packages = with pkgs; [
     skhd

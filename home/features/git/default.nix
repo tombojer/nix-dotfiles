@@ -11,10 +11,10 @@
       enable = true;
     };
 
-    userName = "Kevin Rudde";
-    userEmail = "k.rudde@shopware.com";
+    userName = "Tom Bojer";
+    userEmail = "t.bojer@shopware.com";
 
-    signing.key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCoDDDhao2sZNI8bkouzh0J21uSWRNUvKfHhsliR8U1oPKs8r7xSovTgY2Ex7cSmoDfOj5xBvocgE/QWGwPso9QibNv7+DgaFALtofcjiUr53CVxym7vFwAOseiydjQHhrvYZuRBLe+bcUKByA3oN9yBNSJYP5a2owJNLzdnOSQBWcVQdHuUtgyZqYL2In1e0xuhETsZWznOaZyrFrRIKoknPRbZvnhLgN0L/U+t0mjRczkj1SxBKKQW6DqGdeSrPo+KFFxGcrciQTkLotthnGtv/J3z+NQvWNsJBYDU7rrooL6xA0//m1+P9e1K4u5coAwSb6DTDfEhos5G/PC+03J";
+    signing.key = "ssh-rsa ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFpdZ9NEZF6nf5s9rx+LLW/QAosghrsuC1gmZA0YSezx";
     signing.signByDefault = true;
 
     extraConfig = {
@@ -44,6 +44,6 @@
   };
 
   home.file = {
-    ".ssh/allowed_signers".text = "k.rudde@shopware.com namespaces=\"git\" ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCoDDDhao2sZNI8bkouzh0J21uSWRNUvKfHhsliR8U1oPKs8r7xSovTgY2Ex7cSmoDfOj5xBvocgE/QWGwPso9QibNv7+DgaFALtofcjiUr53CVxym7vFwAOseiydjQHhrvYZuRBLe+bcUKByA3oN9yBNSJYP5a2owJNLzdnOSQBWcVQdHuUtgyZqYL2In1e0xuhETsZWznOaZyrFrRIKoknPRbZvnhLgN0L/U+t0mjRczkj1SxBKKQW6DqGdeSrPo+KFFxGcrciQTkLotthnGtv/J3z+NQvWNsJBYDU7rrooL6xA0//m1+P9e1K4u5coAwSb6DTDfEhos5G/PC+03J";
+    ".ssh/allowed_signers".text = "t.bojer@shopware.com namespaces=\"git\" ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFpdZ9NEZF6nf5s9rx+LLW/QAosghrsuC1gmZA0YSezx";
   };
 }

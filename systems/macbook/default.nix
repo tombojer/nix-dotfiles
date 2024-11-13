@@ -15,14 +15,14 @@
 
   system.stateVersion = 5;
 
-  users.users.kevin = {
-    home = "/Users/kevin";
+  users.users."t.bojer" = {
+    home = "/Users/t.bojer";
     shell = "${pkgs.fish}/bin/fish";
   };
 
-  home-manager.users.kevin = {
+  home-manager.users."t.bojer" = {
     imports = [
-      ../../home/phobos.nix
+      ../../home/macbook.nix
     ];
   };
 
@@ -65,7 +65,7 @@
     #   extra-platforms = x86_64-darwin aarch64-darwin
     # '';
 
-    settings.trusted-users = [ "root" "kevin" ];
+    settings.trusted-users = [ "root" "t.bojer" ];
   };
 
 }

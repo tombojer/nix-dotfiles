@@ -9,7 +9,6 @@
     ./features/packages
     ./features/git
     ./features/nvim
-    ./features/secrets
     ./features/tmux
     ./features/wezterm
     ./features/go
