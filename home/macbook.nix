@@ -1,8 +1,9 @@
 { config
-, lib
 , pkgs
-, ... }:
+, lib
 , flake
+, ... }:
+
 
 {
   imports = [
@@ -16,5 +17,6 @@
 
   home.packages = with pkgs; [
     skhd
+    spotify
   ];
 }

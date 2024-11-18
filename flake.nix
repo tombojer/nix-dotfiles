@@ -45,7 +45,7 @@
       defaultPackage.x86_64-darwin = home-manager.defaultPackage.x86_64-darwin;
 
       darwinConfigurations = {
-        macbook = nix-darwin.lib.darwinSystem {
+        "SW-CFHGXP3MVP" = nix-darwin.lib.darwinSystem {
           specialArgs = extraArgs // {
             remapKeys = false;
           };

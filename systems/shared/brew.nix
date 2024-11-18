@@ -16,11 +16,9 @@
     ];
 
     brews = [
-      "platformsh-cli"
       "docker-credential-helper"
       "argocd"
       "dnsmasq"
-      "eks-node-viewer"
       "grpcurl"
       "exiftool"
       "azure-cli"
