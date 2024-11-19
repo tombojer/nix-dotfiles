@@ -13,6 +13,7 @@
     taps = [
       "platformsh/tap"
       "aws/tap"
+      "nikitabobko/tap"
     ];
 
     brews = [
@@ -28,6 +29,7 @@
       "bruno"
       "rancher"
       "orbstack"
+      "nikitabobko/tap/aerospace"
     ];
   };
 }
