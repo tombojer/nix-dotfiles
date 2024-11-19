@@ -40,6 +40,10 @@
     awscli2
     eksctl
     cilium-cli
+
+    nodejs_22
+    kind
+    natscli
   ];
 }
 
