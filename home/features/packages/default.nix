@@ -48,6 +48,9 @@
     protoc-gen-go
     protoc-gen-connect-go
     iperf
+    amazon-ecr-credential-helper
+    goreleaser
+    golangci-lint
   ];
 }
 

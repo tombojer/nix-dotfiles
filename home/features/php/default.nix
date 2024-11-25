@@ -18,5 +18,6 @@ in
     php
     php.packages.composer
     symfony-cli
+    php83Extensions.redis
   ];
 }
