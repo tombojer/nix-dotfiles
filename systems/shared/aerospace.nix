@@ -36,8 +36,6 @@
         alt-2 = "workspace 2";
         alt-3 = "workspace 3";
         alt-4 = "workspace 4";
-        alt-5 = "workspace 5";
-        alt-6 = "workspace 6";
 
         alt-shift-p = "workspace --wrap-around prev";
         alt-shift-n = "workspace --wrap-around next";
@@ -46,18 +44,16 @@
         alt-shift-2 = ["move-node-to-workspace 2" "workspace 2"];
         alt-shift-3 = ["move-node-to-workspace 3" "workspace 3"];
         alt-shift-4 = ["move-node-to-workspace 4" "workspace 4"];
-        alt-shift-5 = ["move-node-to-workspace 5" "workspace 5"];
-        alt-shift-6 = ["move-node-to-workspace 6" "workspace 6"];
 
-        alt-left = "focus --boundaries-action wrap-around-the-workspace left";
-        alt-right = "focus --boundaries-action wrap-around-the-workspace right";
-        alt-up = "focus --boundaries-action wrap-around-the-workspace up";
-        alt-down = "focus --boundaries-action wrap-around-the-workspace down";
+        alt-h = "focus --boundaries-action wrap-around-the-workspace left";
+        alt-l = "focus --boundaries-action wrap-around-the-workspace right";
+        alt-k = "focus --boundaries-action wrap-around-the-workspace up";
+        alt-j = "focus --boundaries-action wrap-around-the-workspace down";
 
-        alt-shift-left = "move left";
-        alt-shift-right = "move right";
-        alt-shift-up = "move up";
-        alt-shift-down = "move down";
+        alt-shift-h = "move left";
+        alt-shift-l = "move right";
+        alt-shift-k = "move up";
+        alt-shift-j = "move down";
 
         alt-s = "layout v_accordion";
         alt-w = "layout h_accordion";
@@ -69,7 +65,6 @@
         alt-enter = "exec-and-forget open -na WezTerm";
         alt-b = "exec-and-forget open -na \"Google Chrome\" --args --new-window";
 
-        alt-l = "exec-and-forget pmset displaysleepnow";
 
         alt-shift-q = "close --quit-if-last-window";
 

@@ -1,14 +1,7 @@
-{ pkgs
-, remapKeys
-, ...
+{ pkgs,
+  ...
 }: {
-  fonts = {
-    packages = [
-      ( pkgs.nerdfonts.override {
-        fonts = [
-          "JetBrainsMono"
-        ];
-      } )
-    ];
-  };
+  environment.systemPackages = [
+    pkgs.nerd-fonts.jetbrains-mono
+  ];
 }
