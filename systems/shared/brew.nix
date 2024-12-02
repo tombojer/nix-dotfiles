@@ -29,7 +29,6 @@
       "bruno"
       "rancher"
       "orbstack"
-      "nikitabobko/tap/aerospace"
     ];
   };
 }
