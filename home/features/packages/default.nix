@@ -51,6 +51,7 @@
     amazon-ecr-credential-helper
     goreleaser
     golangci-lint
+    gotools
   ];
 }
 
