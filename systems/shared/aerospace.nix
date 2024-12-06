@@ -17,7 +17,7 @@
 
       automatically-unhide-macos-hidden-apps = false;
 
-      accordion-padding = 30;
+      accordion-padding = 20;
       default-root-container-layout = "tiles";
       default-root-container-orientation = "auto";
 
@@ -70,6 +70,8 @@
 
         alt-r = "mode resize";
         alt-shift-comma = "mode layout";
+        alt-shift-right = "move-node-to-monitor right";
+        alt-shift-left = "move-node-to-monitor left";
       };
 
       mode.resize.binding = {
