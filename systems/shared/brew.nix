@@ -23,6 +23,7 @@
       "grpcurl"
       "exiftool"
       "azure-cli"
+      "gitify"
     ];
 
     casks = [
