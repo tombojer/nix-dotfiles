@@ -18,7 +18,7 @@
     ssm-session-manager-plugin
     wget
     wireguard-tools
-    mysql80
+    #mysql80
     kubectl
     kubectx
     kubernetes-helm
@@ -52,6 +52,9 @@
     goreleaser
     golangci-lint
     gotools
+    pv
+    mtr
+    terragrunt
   ];
 }
 
