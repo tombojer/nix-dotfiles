@@ -379,16 +379,18 @@
         "nixpkgs": "nixpkgs_6"
       },
       "locked": {
-        "lastModified": 1739472715,
-        "narHash": "sha256-FgYKJpZ968mt6J3u24Z5BF6NFOnywXXA+oyYdSG7eZQ=",
-        "rev": "863dd700c8dc95659f02f79b58d6b9f742e268b1",
-        "revCount": 121,
-        "type": "tarball",
-        "url": "https://api.flakehub.com/f/pinned/DeterminateSystems/nix/2.26.2/019500b6-1e78-7abd-add4-156f5b16305b/source.tar.gz"
+        "lastModified": 1740145203,
+        "narHash": "sha256-eZbbAOBv+cVo9uSL/URnjggo1En+NFiTh5iZy6bgjgM=",
+        "owner": "DeterminateSystems",
+        "repo": "nix",
+        "rev": "dd85f77b286b7f7aac47a104369e421ba74c4fa8",
+        "type": "github"
       },
       "original": {
-        "type": "tarball",
-        "url": "https://flakehub.com/f/DeterminateSystems/nix/2.0"
+        "owner": "DeterminateSystems",
+        "ref": "main",
+        "repo": "nix",
+        "type": "github"
       }
     },
     "nix_3": {

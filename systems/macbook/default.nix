@@ -39,7 +39,6 @@
     raycast
   ];
 
-  services.nix-daemon.enable = true;
   nixpkgs.config.allowUnfree = true;
 
   programs.fish.enable = true;
@@ -51,6 +50,9 @@
   time.timeZone = "Europe/Berlin";
 
   # Nix config from https://github.com/DeterminateSystems/nix-installer
+  #
+
+  nix.enable = true;
 
   nix = {
     # package = pkgs.nixVersions.nix_2_23;
@@ -63,6 +65,7 @@
     #   nix-path = nixpkgs=${flake.inputs.nixpkgs}
     #   extra-platforms = x86_64-darwin aarch64-darwin
     # '';
+    #
 
     settings.trusted-users = [ "root" "t.bojer" ];
   };
