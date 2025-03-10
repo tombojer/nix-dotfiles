@@ -23,13 +23,14 @@
       "grpcurl"
       "exiftool"
       "azure-cli"
-      "gitify"
+      "mysql-client"
     ];
 
     casks = [
       "bruno"
       "rancher"
       "orbstack"
+      "gitify"
     ];
   };
 }
