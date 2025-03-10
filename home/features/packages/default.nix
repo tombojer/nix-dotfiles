@@ -55,6 +55,7 @@
     pv
     mtr
     terragrunt
+    vault
   ];
 }
 
