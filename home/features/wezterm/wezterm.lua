@@ -25,7 +25,7 @@ function scheme_for_appearance(appearance)
 	if appearance:find("Dark") then
 		return "Kanagawa (Gogh)"
 	else
-		return "Tomorrow"
+		return "Catppuccin Latte"
 	end
 end
 
