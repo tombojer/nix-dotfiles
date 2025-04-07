@@ -17,7 +17,7 @@
     pigz
     ssm-session-manager-plugin
     wget
-    wireguard-tools
+    #wireguard-tools
     #mysql80
     kubectl
     kubectx
