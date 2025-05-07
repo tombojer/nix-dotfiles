@@ -12,7 +12,7 @@
     ./features/tmux
     ./features/wezterm
     ./features/go
-    ./features/php
+  #  ./features/php
   ];
 
   # This value determines the Home Manager release that your configuration is
