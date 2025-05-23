@@ -19,6 +19,7 @@
     wget
     #wireguard-tools
     #mysql80
+    mariadb
     kubectl
     kubectx
     kubernetes-helm
@@ -56,6 +57,7 @@
     mtr
     terragrunt
     vault
+    lazysql
   ];
 }
 

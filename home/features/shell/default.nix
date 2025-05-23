@@ -78,6 +78,16 @@
             echo "Found valid SSO session, using it!"
         end
       '';
+      loadenv = ''
+        for line in (cat .env)
+          if string match -qr '^\s*#' $line
+              continue
+          end
+          set key (string split '=' $line)[1]
+          set value (string split '=' $line)[2]
+          set -gx $key $value
+      end
+    '';
     };
   };
 
@@ -103,8 +113,6 @@
   };
 
   home.shellAliases = {
-    "wgup-staging" = "wg-quick up ~/.config/wireguard/staging.conf";
-    "wgdown-staging" = "wg-quick down ~/.config/wireguard/staging.conf";
     "cat" = "bat -pp";
     "tailscale" = "/Applications/Tailscale.app/Contents/MacOS/Tailscale";
     "k" = "kubectl";
