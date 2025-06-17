@@ -13,6 +13,7 @@
   ];
 
   system.stateVersion = 5;
+  system.primaryUser = "t.bojer";
 
   users.users."t.bojer" = {
     home = "/Users/t.bojer";

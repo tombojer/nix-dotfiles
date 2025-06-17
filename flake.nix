@@ -2,7 +2,7 @@
   description = "Home Manager configuration";
 
   inputs = {
-    nix.url = "github:DeterminateSystems/nix/main";
+    nix.url = "https://flakehub.com/f/DeterminateSystems/nix/2.0";
 
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
