@@ -58,6 +58,7 @@
     terragrunt
     vault
     lazysql
+    argo-workflows
   ];
 }
 
