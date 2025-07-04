@@ -59,6 +59,7 @@
     vault
     lazysql
     argo-workflows
+    claude-code
   ];
 }
 
