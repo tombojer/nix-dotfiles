@@ -2,10 +2,10 @@
 
 ## Requirements
 
-You need to install Nix, but we are not using their official installer. Instead, we are using the Determinate Systems Nix Installer. Just simply paste the following command into your terminal and you should be good to go:
+You need to install Nix using the official installer:
 
 ```bash
-curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+curl -L https://nixos.org/nix/install | sh
 ```
 
 ### Homebrew
