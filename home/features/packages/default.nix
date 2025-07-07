@@ -45,6 +45,7 @@
     nodejs_22
     kind
     natscli
+    nsc
     buf
     protoc-gen-go
     protoc-gen-connect-go
