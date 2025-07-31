@@ -61,6 +61,7 @@
     lazysql
     argo-workflows
     claude-code
+    graphviz
   ];
 }
 
