@@ -11,6 +11,7 @@
     ./features/nvim
     ./features/tmux
     ./features/wezterm
+    ./features/ghostty
     ./features/go
   #  ./features/php
   ];
