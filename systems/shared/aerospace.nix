@@ -15,6 +15,17 @@
         "move-mouse window-lazy-center"
       ];
 
+      on-window-detected = [
+        {
+          "if" = {
+            app-id = "com.mitchellh.ghostty";
+          };
+          run = [
+            "layout tiling"
+          ];
+        }
+      ];
+
       automatically-unhide-macos-hidden-apps = false;
 
       accordion-padding = 20;
@@ -62,7 +73,7 @@
         alt-shift-space = "layout floating tiling";
         alt-f = "layout floating tiling";
 
-        alt-enter = "exec-and-forget open -na WezTerm";
+        alt-enter = "exec-and-forget open -na Ghostty";
         alt-b = "exec-and-forget open -na \"Google Chrome\" --args --new-window";
 
 
