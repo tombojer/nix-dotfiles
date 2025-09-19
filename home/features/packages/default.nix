@@ -1,7 +1,6 @@
 { pkgs, flake, ... }: {
 
   home.packages = with pkgs; [
-    flake.inputs.devenv.packages.${system}.devenv
     cachix
 
     nixpkgs-fmt
@@ -34,13 +33,11 @@
     docker-client
     docker-buildx
     dive
-    bun
     k9s
     gh
     k6
     awscli2
     eksctl
-    cilium-cli
 
     nodejs_22
     kind
