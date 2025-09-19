@@ -62,6 +62,8 @@
     argo-workflows
     claude-code
     graphviz
+    discord
+    krew
   ];
 }
 
