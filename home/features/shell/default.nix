@@ -47,7 +47,7 @@
       fish_add_path $HOME/.krew/bin
 
       # Go Binaries
-      fish_add_path $GOPATH/bin
+      fish_add_path $HOME/go/bin
     '';
 
     plugins = [

@@ -6,7 +6,7 @@
     enableFishIntegration = true;
 
     settings = {
-      theme = "dark:catppuccin-frappe,light:catppuccin-latte";
+      theme = "dark:Catppuccin Frappe,light:Catppuccin Latte";
       font-size = 16;
       keybind = [
         "ctrl+shift+h=goto_split:left"
