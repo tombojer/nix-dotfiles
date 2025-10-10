@@ -17,7 +17,7 @@
 
   home.packages = with pkgs; [
     skhd
-    spotify
     utm
+    container
   ];
 }
