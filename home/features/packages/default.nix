@@ -61,6 +61,7 @@
     graphviz
     discord
     krew
+    github-copilot-cli
   ];
 }
 
