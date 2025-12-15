@@ -11,13 +11,13 @@
       enable = true;
     };
 
-    userName = "Tom Bojer";
-    userEmail = "t.bojer@shopware.com";
-
     signing.key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFpdZ9NEZF6nf5s9rx+LLW/QAosghrsuC1gmZA0YSezx";
     signing.signByDefault = true;
 
-    extraConfig = {
+    settings = {
+      user.name = "Tom Bojer";
+      user.email = "t.bojer@shopware.com";
+      
       push.autoSetupRemote = true;
       init.defaultBranch = "main";
       pull.rebase = true;
