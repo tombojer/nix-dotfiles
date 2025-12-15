@@ -62,6 +62,9 @@
     discord
     krew
     github-copilot-cli
+    k3d
+    mise
+    pipx
   ];
 }
 

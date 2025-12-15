@@ -48,6 +48,9 @@
 
       # Go Binaries
       fish_add_path $HOME/go/bin
+
+      # Mise
+      mise activate fish | source
     '';
 
     plugins = [
