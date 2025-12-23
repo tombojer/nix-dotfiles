@@ -65,13 +65,15 @@
         alt-shift-l = "move right";
         alt-shift-k = "move up";
         alt-shift-j = "move down";
+        alt-comma = "join-with left";
+        alt-period = "join-with right";
+
 
         alt-s = "layout v_accordion";
         alt-w = "layout h_accordion";
         alt-e = "layout tiles horizontal vertical";
 
         alt-shift-space = "layout floating tiling";
-        alt-f = "layout floating tiling";
 
         alt-enter = "exec-and-forget open -na Ghostty";
         alt-b = "exec-and-forget open -na \"Google Chrome\" --args --new-window";
