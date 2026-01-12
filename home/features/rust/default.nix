@@ -1,7 +1,15 @@
 { pkgs, config, ... }: {
 
-  programs.go = {
-    enable = true;
-    package = pkgs.go_1_25;
+  home.packages = with pkgs; [
+    rustup
+  ];
+
+  home.sessionVariables = {
+    CARGO_HOME = "${config.home.homeDirectory}/.cargo";
+    RUSTUP_HOME = "${config.home.homeDirectory}/.rustup";
   };
+
+  home.sessionPath = [
+    "${config.home.homeDirectory}/.cargo/bin"
+  ];
 }

@@ -65,6 +65,8 @@
     k3d
     mise
     pipx
+    opencode
+    fermyon-spin
   ];
 }
 

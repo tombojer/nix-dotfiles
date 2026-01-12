@@ -13,6 +13,7 @@
     ./features/wezterm
     ./features/ghostty
     ./features/go
+    ./features/rust
   #  ./features/php
   ];
 
