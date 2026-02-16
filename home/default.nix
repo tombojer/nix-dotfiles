@@ -14,6 +14,7 @@
     ./features/ghostty
     ./features/go
     ./features/rust
+    ./features/k9s
   #  ./features/php
   ];
 

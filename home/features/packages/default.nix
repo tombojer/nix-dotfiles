@@ -33,7 +33,6 @@
     docker-client
     docker-buildx
     dive
-    k9s
     gh
     k6
     awscli2
