@@ -66,6 +66,7 @@
     pipx
     opencode
     fermyon-spin
+    eks-node-viewer
   ];
 }
 
