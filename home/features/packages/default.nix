@@ -68,6 +68,7 @@
     fermyon-spin
     eks-node-viewer
     yq
+    codex
   ];
 }
 
