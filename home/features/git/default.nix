@@ -12,6 +12,7 @@
     };
 
     signing.key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFpdZ9NEZF6nf5s9rx+LLW/QAosghrsuC1gmZA0YSezx";
+    signing.format = "ssh";
     signing.signByDefault = true;
 
     settings = {
@@ -25,7 +26,6 @@
       push.default = "simple";
       fetch.prune = true;
 
-      gpg.format = "ssh";
       gpg.ssh.program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
       url."ssh://git@github.com".insteadOf = "https://github.com";
     };
