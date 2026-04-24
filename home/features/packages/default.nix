@@ -26,9 +26,6 @@
 
     terraform
 
-    act
-    ory
-
     istioctl
     docker-client
     docker-buildx
@@ -53,20 +50,16 @@
     pv
     mtr
     terragrunt
-    vault
     lazysql
     argo-workflows
     claude-code
     graphviz
-    discord
     krew
     github-copilot-cli
     k3d
     mise
     pipx
     opencode
-    fermyon-spin
-    eks-node-viewer
     yq
     codex
   ];
