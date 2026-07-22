@@ -6,7 +6,10 @@
     enable = true;
     onActivation = {
       autoUpdate = true;
-      cleanup = "uninstall";
+      # nix-darwin currently emits the removed `--force-cleanup` flag for
+      # cleanup = "uninstall", so pass the current Homebrew flag directly.
+      cleanup = "none";
+      extraFlags = [ "--cleanup" ];
       upgrade = true;
     };
 
